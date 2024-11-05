@@ -2,9 +2,10 @@
 
 namespace OnlineEdu.WebUI.Areas.Admin.Controllers
 {
+    [Area("Admin")]
+    [Route("[area]/[controller]/[action]/{id?}")]
     public class AboutController : Controller
     {
-        [Route("[area]/[controller]/[action]/{id?}")]
         public IActionResult Index()
         {
             return View();
